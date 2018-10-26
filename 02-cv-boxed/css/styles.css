@@ -109,7 +109,7 @@ b.max-bold{ font-weight: 700; }
 --------------------------------- */
 
 .intro-section{ padding: 50px 0; position: relative; background-size: cover; 
-	z-index: 1;background-image: url(../../images/slider-3-1920x1080.jpg); }
+	z-index: 1;background-image: url(../../images/slider-1920x540.jpg); }
 
 .intro-section:before{ content:''; z-index: -1; position: absolute; top: 0; bottom: 0; left: 0; 
 	right: 0; background: rgba(0,0,0, .2); }
@@ -223,5 +223,5 @@ b.max-bold{ font-weight: 700; }
 8. FOOTER
 --------------------------------- */
 
-.copyright{ text-align: center; padding: 30px 0; background: #28023D; }
+.copyright{ text-align: center; padding: 30px 0; background: black; }
 

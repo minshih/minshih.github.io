@@ -54,7 +54,7 @@
 	
 	
 	if ( $.isFunction($.fn.fluidbox) ) {
-		$('a').fluidbox();
+		$('a.fluidbox-btn').fluidbox();
 	}
 	
 	var countCounterUp = 0;
