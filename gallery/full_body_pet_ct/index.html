@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Full Body PET/CT Scans Volume Visualization</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="thumbnail-gallery.css">
+
+</head>
+<body>
+
+<div class="container gallery-container">
+
+    <h1>Full Body PET/CT Scans Volume Visualization</h1>
+
+    <p class="page-description text-center">Visualization by <a href="https://vidi.cs.ucdavis.edu/">VIDi Labs</a></p>
+    
+    <div class="tz-gallery">
+
+        <div class="row">
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="./images/CT_skin.jpg">
+                        <img src="./images/CT_skin.jpg" alt="CT Skin Only">
+                    </a>
+                    <div class="caption">
+                        <h3>CT Skin Only</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="./images/CT_muscle.jpg">
+                        <img src="./images/CT_muscle.jpg" alt="CT Muscle Only">
+                    </a>
+                    <div class="caption">
+                        <h3>CT Muscle Only</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="./images/CT_bone.jpg">
+                        <img src="./images/CT_bone.jpg" alt="CT Bone Only">
+                    </a>
+                    <div class="caption">
+                        <h3>CT Bone Only</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="./images/PET_colormap.jpg">
+                        <img src="./images/PET_colormap.jpg" alt="PET Only">
+                    </a>
+                    <div class="caption">
+                        <h3>PET Only</h3>
+                        <p>Colors show the intensity of the PET image.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="./images/PET+CT_colormap.jpg">
+                        <img src="./images/PET+CT_colormap.jpg" alt="PET+CT">
+                    </a>
+                    <div class="caption">
+                        <h3>PET+CT</h3>
+                        <p>Colors show the intensity of the PET image. Bones are from the CT image.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="./images/PET_filtered_CT.jpg">
+                        <img src="./images/PET_filtered_CT.jpg" alt="PET-filtered CT">
+                    </a>
+                    <div class="caption">
+                        <h3>PET-filtered CT</h3>
+                        <p>The CT image is filtered by the PET image. Only the regions with high PET intensity are shown opaquely.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+</body>
+</html>
