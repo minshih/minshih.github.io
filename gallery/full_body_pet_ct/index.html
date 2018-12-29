@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Full Body PET/CT Scans Volume Visualization</title>
+    <title>Volume Visualization of Full Body PET/CT Scans</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
@@ -18,7 +18,7 @@
 
 <div class="container gallery-container">
 
-    <h1>Full Body PET/CT Scans Volume Visualization</h1>
+    <h1>Volume Visualization of Full Body PET/CT Scans</h1>
 
     <p class="page-description text-center">Visualization by <a href="https://vidi.cs.ucdavis.edu/">VIDi Labs</a></p>
     
@@ -66,7 +66,7 @@
                     </a>
                     <div class="caption">
                         <h3>PET Only</h3>
-                        <p>Colors show the intensity of the PET image.</p>
+                        <p>Colors show the intensity of the PET image. The original intensity range of the PET image is 0-65535 (16-bit); the range 0-8192 is selected for the visualization.</p>
                     </div>
                 </div>
             </div>
@@ -77,7 +77,7 @@
                     </a>
                     <div class="caption">
                         <h3>PET+CT</h3>
-                        <p>Colors show the intensity of the PET image. Bones are from the CT image.</p>
+                        <p>Volume renderings of the PET image and the CT image are combined. Colors show the intensity of the PET image. The original intensity range of the PET image is 0-65535 (16-bit); the range 0-8192 is selected for the visualization. Bones from the CT image can provide the locale information.</p>
                     </div>
                 </div>
             </div>
@@ -88,7 +88,7 @@
                     </a>
                     <div class="caption">
                         <h3>PET-filtered CT</h3>
-                        <p>The CT image is filtered by the PET image. Only the regions with high PET intensity are shown opaquely.</p>
+                        <p>The CT image is filtered by the PET image. Only the regions with high PET intensity values are shown opaquely. The plot at bottom-left shows the filtering function used; the x-axis is the PET image value while the y-axis represents opacity.</p>
                     </div>
                 </div>
             </div>
