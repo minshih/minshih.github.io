@@ -1,2 +1,2 @@
 # minshih.github.io
-Personal website
+Personal website.
